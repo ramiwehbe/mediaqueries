@@ -1,0 +1,177 @@
+html{
+    background-image: url("../images/bkg.jpg");
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+}
+.container {
+    text-align: center;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-color:none;
+    background-repeat: repeat;
+}
+.wrapper {
+    /*margin-top: 0;*/
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    text-align: center;
+    width: 70%;
+}
+.section{
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    font-size: 20px;
+    background: #ffffff;
+    /*-webkit-box-shadow: 2px 2px 2px 2px #888;
+    -moz-box-shadow: 2px 2px 2px 2px #888;*/
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    display: flex;    
+}
+.header{
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    font-size: 20px;
+    background: #ffffff;
+    /*-webkit-box-shadow: 2px 2px 2px 2px #888;
+    -moz-box-shadow: 2px 2px 2px 2px #888;*/
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    display: flex;   
+}
+.my-name{
+    /*display: flex;*/
+    flex: 1;
+    background-color:#4aaaa5;
+    color:#ffffff;
+    font-weight: bolder;
+    font-family: 'Times New Roman';
+    /*justify-content: center;*/
+    /*align-items: center;*/    
+}
+.my-name p{
+    font-size: 28px;
+}
+.about-port-cnt{
+    /*display: flex;*/
+    flex: 2;
+    justify-content: flex-end;
+    /*align-content: center;*/
+    color: grey;
+    /*align-items: center;*/
+    padding: 20px;
+}
+.box{
+    /*position: absolute;*/
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.box-header{
+    display:flex;
+    flex: 1;
+    font-family: 'Times New Roman';
+    color: #4aaaa5;
+    font-size: 26px;
+    justify-content:initial;
+    font-weight: bolder;
+    /*text-align: left;*/
+    border-bottom-width: 100%;
+    border-bottom-color: lightgray;
+    border-bottom-style: solid;
+    border-bottom-width: 0.025in;
+}
+.box-content{
+    display: flex;
+    flex-direction: row;
+    flex: 6;
+    /*margin-top: 20px;
+    padding: 20px;*/
+    text-align: justify;
+   
+
+}
+.box .imgBx img{
+    max-width: 100%;
+}
+
+.port-col{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.port-sub{
+    display: flex;
+    flex: 1;
+    width: 20%;
+}
+.port-col img{
+    
+    width: 100%;
+    height:100%;
+}
+.port-sub + .port-sub {
+  
+    margin: 20px;
+}
+form{
+    text-align: left;    
+}
+a{
+    text-decoration-line: none;
+    color: grey;
+}
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin : 20px;
+    width: 80%;
+    max-width: min-content;
+    height: auto;
+}
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+br{
+    line-height: 25px;
+}
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+/*textarea {    
+    height: 150px;
+}*/
+@media only screen and (max-width: 980px) {}
+@media only screen and  (max-width: 768px) {}
+@media only screen and  (max-width: 640px) {
+    .header{
+        position:static;
+        flex-direction: column;
+        width:100%;
+    }
+    .box-content{
+        flex-direction:column;
+    }
+    .img{
+        width:100%;
+    }
+    .about-port-cnt{
+        flex: .75;
+        text-align: center;
+        justify-content: center;
+    }
+}
